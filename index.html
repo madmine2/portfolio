@@ -6,9 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    
+<style>
+
+    .divGlobal{
+        display: grid;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-content: space-evenly;
+        align-content: center;
+        background-color: blue;
+        padding: 10px
+    }
+    .grid-item{
+        background-color: aqua;
+        text-align: center;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .item1{
+        grid-column: 1;
+        grid-row: 2;
+    } 
+     .item2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+</style>
 </head>
 <body>
-    
+    <div class="divGlobal">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+    </div>
 </body>
 </html>
