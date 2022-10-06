@@ -18,12 +18,11 @@
     .divGrid{
         display: grid;
         column-gap: 3rem;
-        row-gap: 3rem;
+        row-gap: 7rem;
         align-content: center;
-        padding: 1rem;
+        padding: 12rem;
     }
     .grid-item{
-        background-color: aqua;
         text-align: center;
         font-size: 30px;
         padding: 0.5rem;
@@ -37,11 +36,11 @@
         grid-row: 1;
     }
    .item3{
-        grid-column: 3;
-        grid-row: 1;
+        grid-column: 1;
+        grid-row: 2;
     }
    .item4{
-        grid-column: 2 / span 2;
+        grid-column: 2 ;
         grid-row: 2;
     }
     .navbar{
@@ -53,7 +52,7 @@
     }
     #firstMain{
         position: relative;
-        top: 15rem;
+        top: 0rem;
     }
     .MenuIcon{
         position: absolute;
@@ -70,6 +69,18 @@
     transform: scale(1,1.2); 
 
 }
+.overlayProjet{
+    z-index: 1;
+    display: block;
+    width: auto;
+    height: auto;
+    
+}
+.overlayProjet:hover{
+  
+    background-color: rgb(22, 22, 44);
+    opacity:0.7;
+}
 #nameandlogo{
     position: absolute; 
     top: 3rem;
@@ -77,6 +88,10 @@
     display: block;
     height: 4rem; 
     width: 15rem;
+}
+.ProjetImg{
+    max-width: 33vw;
+     scale: 1 1.1; 
 }
     @media screen and (max-width: 800px) {
         .navbar{
@@ -120,10 +135,20 @@
     </div>
   <!-- first main element -->
     <div class="divGrid" id="firstMain">
-        <div class="grid-item item1">1</div>
-        <div class="grid-item item2">2</div>
-      <div class="grid-item item3">3</div>
-            <div class="grid-item item4">4</div>
+        <div class="grid-item  item1">
+            <div class="overlayProjet">
+            <img class="ProjetImg" src="images/Projet2.PNG" alt="">
+        </div>
+        </div>
+        <div class="grid-item item2">
+            <img class="ProjetImg" src="images/Projet2.PNG" alt="">
+        </div>
+        <div class="grid-item item3">
+            <img class="ProjetImg" src="images/Projet2.PNG" alt="">
+        </div>
+        <div class="grid-item item4">
+            <img class="ProjetImg" src="images/Projet2.PNG" alt="">
+        </div>
 
     </div>
 </body>
