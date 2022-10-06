@@ -7,36 +7,124 @@
     <title>Portfolio</title>
 
 <style>
-
-    .divGlobal{
+    html{
+        padding: 0;
+    }
+    body{
+        height: 200vh;
+        padding: 0;
+        margin: 0;
+    }
+    .divGrid{
         display: grid;
-        column-gap: 50px;
-        row-gap: 50px;
-        justify-content: space-evenly;
+        column-gap: 3rem;
+        row-gap: 3rem;
         align-content: center;
-        background-color: blue;
-        padding: 10px
+        padding: 1rem;
     }
     .grid-item{
         background-color: aqua;
         text-align: center;
         font-size: 30px;
-        padding: 10px;
+        padding: 0.5rem;
     }
     .item1{
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     } 
      .item2{
-        grid-column: 1;
+        grid-column: 2;
+        grid-row: 1;
+    }
+   .item3{
+        grid-column: 3;
+        grid-row: 1;
+    }
+   .item4{
+        grid-column: 2 / span 2;
         grid-row: 2;
     }
+    .navbar{
+        display:block;
+        position: fixed;
+        height: 7rem;
+        width: 100%;
+        z-index: 10;
+    }
+    #firstMain{
+        position: relative;
+        top: 15rem;
+    }
+    .MenuIcon{
+        position: absolute;
+        right: 5rem;
+        top: 4rem;
+        width: 4rem;
+       
+    }
+    #menuicon{
+        transition: 0.3s;
+    }
+    #menuicon:hover {
+    opacity: 0.7;
+    transform: scale(1,1.2); 
+
+}
+#nameandlogo{
+    position: absolute; 
+    top: 3rem;
+    left: 3rem;
+    display: block;
+    height: 4rem; 
+    width: 15rem;
+}
+    @media screen and (max-width: 800px) {
+        .navbar{
+       background-color: white;
+       opacity: 0.9;
+    }
+    .MenuIcon{
+        top: 2rem;
+    }
+    #nameandlogo{
+        top: 1rem;
+    }
+
+}
 </style>
 </head>
 <body>
-    <div class="divGlobal">
+    <!-- The navbar  -->
+    <div class="navbar">
+        
+            <div id="nameandlogo" >
+                <div style="position: relative;display: block;height: 4rem; width: 15rem;">
+                    <div style="position: absolute;  width:5rem; top : 0.5rem;">
+                        <img src="images/Logo portfolio.svg" alt="Logo for the website (a D uppercase in a circle)" >
+                        </div>
+                        <div style="position: absolute; left:5rem; width:12rem;">
+                            <p style="font-weight: 800;font-size:1.5rem;">Matteo Delaigle </p>
+                        </div>
+                        <div style="position: absolute; left: 5rem; width:10rem; top: 2.5rem;">
+                            <p style="color: grey;font-size: 1rem">Ingénieur Informaticien</p>
+                        </div>
+                </div>
+              
+            </div>
+            
+            <div class="MenuIcon">
+                <img id="menuicon" src="images/MenuIcon.png" alt="Menu icon (redirect to the menu)" style="width: 5rem;">
+            </div>
+
+
+    </div>
+  <!-- first main element -->
+    <div class="divGrid" id="firstMain">
         <div class="grid-item item1">1</div>
         <div class="grid-item item2">2</div>
+      <div class="grid-item item3">3</div>
+            <div class="grid-item item4">4</div>
+
     </div>
 </body>
 </html>
