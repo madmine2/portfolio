@@ -71,15 +71,19 @@
 }
 .overlayProjet{
     z-index: 10;
-    display: block;
-   
-    background-color: rgb(34, 34, 70);
     max-width: 33vw;
+    width: auto;
+     scale: 1 1.1; 
+     position: relative;
+     display: block;
+    background-color: rgb(34, 34, 70);
+    opacity: 0;
+    height: auto;
     
 }
 .overlayProjet:hover{
    
-    opacity:0.7;
+    opacity:1;
 }
 #nameandlogo{
     position: absolute; 
@@ -92,6 +96,8 @@
 .ProjetImg{
     z-index: 0;
     max-width: 33vw;
+     position: relative;
+     display: block;
      scale: 1 1.1; 
 }
 
@@ -140,20 +146,26 @@
   <!-- first main element -->
     <div class="divGrid" id="firstMain">
         <div class="grid-item  item1">
+            
+            <img class="ProjetImg" src="images/Projet2.PNG" alt="">
+            <div class="overlayProjet"></div>
+        </div>
+        <div class="grid-item item2">
             <div class="overlayProjet">
             <img class="ProjetImg" src="images/Projet2.PNG" alt="">
         </div>
-        </div>
-        <div class="grid-item item2">
-            <img class="ProjetImg" src="images/Projet2.PNG" alt="">
-        </div>
+    </div>
         <div class="grid-item item3">
+            <div class="overlayProjet">
             <img class="ProjetImg" src="images/Projet2.PNG" alt="">
         </div>
+    </div>
         <div class="grid-item item4">
+            <div class="overlayProjet">
+            
             <img class="ProjetImg" src="images/Projet2.PNG" alt="">
         </div>
-
+    </div>
     </div>
 </body>
 </html>
